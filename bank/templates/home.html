@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+        <div class="container">
+            <h1>Welcome To</h1>
+            <br>
+            <img src="{{ url_for('static', filename='123.jpg') }}">
+            <br><br><br>
+            <p>A trustworthy bank of India.</p>
+            <br>
+            <a class="btn btn-primary" href="{{ url_for('login_page') }}">Get Started</a>
+        </div>
+    </div>
+{% endblock %}
+
+

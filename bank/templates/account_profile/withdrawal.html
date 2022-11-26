@@ -1,0 +1,27 @@
+{% extends 'profile.html' %}
+
+{% block title %}
+    Withdrawal Page
+{% endblock %}
+
+
+{% block content %}
+    <body class="text-center">
+        <div class="container">
+                    <form class="form-signin" method="POST" style="color:white">
+            {{ form.hidden_tag() }}
+            <h1 class="h3 mb-3 font-weight-normal">
+                Cash Withdrawal
+            </h1>
+            <br>
+            {{ form.cash.label() }}
+            {{ form.cash(class="form-control", placeholder="How much cash you want to Withdrawal?") }}
+            <br>
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+            <br>
+
+        </form>
+        </div>
+    </body>
+{% endblock %}
