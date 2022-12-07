@@ -4,7 +4,7 @@ from bank.forms import RegisterForm, LoginForm, DepositForm, WithdrawalForm, Tra
 
 import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="Aditya@997", database="abi_final")
+mydb = mysql.connector.connect(host="localhost", user="root", passwd="Your_MYSQL_Password", database="Database_Name")
 
 
 @app.route('/')
