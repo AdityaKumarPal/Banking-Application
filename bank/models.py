@@ -9,7 +9,7 @@ def load_user(user_id):
 
 
 class User(UserMixin):
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="Aditya@997", database="abi_final")
+    mydb = mysql.connector.connect(host="localhost", user="root", passwd="Your_MYSQL_Password", database="Database_Name")
     cursor = mydb.cursor()
     cursor.execute("select * from users")
     cursor.fetchall()
