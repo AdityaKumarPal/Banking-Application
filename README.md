@@ -10,7 +10,8 @@
 **Install the following dependencies:**
  *Create a virtual environment for your project and fullfill the requirements of the project as mentioned in the "requirement.txt" file in the repository.*
 
-**To run the file scraping.py, do:**
-- python3 scraping.py
-- Open it in any of your browser
+**To run the file main.py:**
+- Open new terminal
+- python main.py
+- Open the local link in any of your browser
 - And you're done ✌️
