@@ -8,7 +8,7 @@
 - create table transactions(Transaction varchar(20), Transferred varchar(50), Cash int, mobile varchar(10), Date_Time timestamp default CURRENT_TIMESTAMP, foreign key(mobile) references users(Mobile));
 
 **Install the following dependencies:**
- *Create a virtual environment for your project and fullfill the requirements of it as mentioned in the "requirement.txt" file of this repository.*
+ *Create a virtual environment for your project and fullfill the requirements of the project as mentioned in the "requirement.txt" file in the repository.*
 
 **To run the file scraping.py, do:**
 - python3 scraping.py
