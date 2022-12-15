@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='widget.css') }}">
+   <title>
+      {% block title %}
+
+      {% endblock %}
+   </title>
+</head>
+
+<body>
+   <header>
+      <nav style="display: flex; justify-content: space-between;">
+         <ul>
+            <li>
+               <img src="{{ url_for('static', filename='small_logo.png') }}">
+            </li>
+
+            <li style="font-weight: bolder;">
+               <a href="{{ url_for('info_page') }}">
+                  Welcome,
+               <span style="color: aqua;">{{ username }}!</span>
+               </a>
+            </li>
+         </ul>
+
+         <ul>
+            <li>
+               <a style="color: lawngreen; font-weight: bold">
+                  ₹ {{ Total_Cash }}/-
+               </a>
+            </li>
+
+            <li>
+               <a href="{{ url_for('logout') }}">Logout</a>
+            </li>
+         </ul>
+
+         </div>
+      </nav>
+   </header>
+
+   {% with messages = get_flashed_messages(with_categories=true) %}
+   {% if messages %}
+   {% for category, message in messages %}
+
+   <div class="alert alert-{{ category }}">
+
+      {{ message }}
+      
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">CloseX</span> 
+   </div>
+
+   {% endfor %}
+   {% endif %}
+   {% endwith %}
+
+   <main>
+      {% block content %}
+
+      {% endblock %}
+   </main>
+
+   <footer>
+      <p>Copyright &copy; Avenger's Bank of India</p>
+   </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <img src="{{ url_for('static', filename='large_logo.png') }}">
+
+    <h1>
+        Please Login
+    </h1>
+
+    <form class="container form" method="POST">
+
+        {{ form.hidden_tag() }}
+
+        {{ form.mobile.label() }}
+        {{ form.mobile(class="input", placeholder="Mobile Number") }}
+
+        {{ form.password.label() }}
+        {{ form.password(class="input", placeholder="Password") }}
+        <br>
+
+        {{ form.submit(class="blueButton") }}
+        <br>
+
+    </form>
+
+    <div>
+        <h5>Don't have an account? </h5>
+        <a class="primary-btn btn" href=" {{ url_for('register_page') }} ">Register</a>
+    </div>
+
+</div>
+
+{% endblock %}
