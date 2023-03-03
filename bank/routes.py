@@ -3,11 +3,7 @@ from flask import render_template, redirect, url_for, flash, session
 from bank.forms import RegisterForm, LoginForm, DepositForm, WithdrawalForm, TransferForm, ChangePasswordForm
 import mysql.connector
 
-<<<<<<< HEAD
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="Aditya@997", database="abi_project")
-=======
 mydb = mysql.connector.connect(host="localhost", user="root", passwd="your_mysql_password", database="database_name")
->>>>>>> master
 
 
 @app.route("/")
@@ -15,16 +11,11 @@ mydb = mysql.connector.connect(host="localhost", user="root", passwd="your_mysql
 def home_page():
     return render_template("index.html")
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 @app.route("/about")
 def about_page():
     return render_template("about.html")
 
 
-<<<<<<< HEAD
 @app.route('/register', methods=["GET", "POST"])
 def register_page():
     form=RegisterForm()
@@ -50,11 +41,6 @@ def register_page():
             flash(f'There was an error with creating a user: {err_msg}', category="danger")
 
     return render_template("register.html", form=form)
-=======
-@app.route("/contact")
-def contact_page():
-    return render_template("contact.html")
->>>>>>> master
 
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -118,15 +104,8 @@ def info_page():
     Mob = my_cursor.fetchone()[0]
 
     global Total_Cash
-<<<<<<< HEAD
-    global Total_Cash
     cursor = mydb.cursor()
     cursor.execute(f"select SUM(Cash) from transactions where mobile = '{Mob}'")
-    cursor.execute(f"select SUM(Cash) from transactions where mobile = '{Mob}'")
-=======
-    cursor = mydb.cursor()
-    cursor.execute(f"select SUM(Cash) from transactions where mobile = '{Mob}'")
->>>>>>> master
     Total_Cash = cursor.fetchone()[0]
 
     return render_template("loggedin/info.html", username=session['username'], Total_Cash=Total_Cash)
@@ -143,18 +122,10 @@ def logout():
 def deposit_page():
     form = DepositForm()
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
     if form.validate_on_submit():
         if session['loggedin']:
             my_cursor = mydb.cursor()
             my_cursor.execute("select Mobile from users where Name = '{}'".format(session['username']))
-<<<<<<< HEAD
-            my_cursor.execute("select Mobile from users where Name = '{}'".format(session['username']))
-=======
->>>>>>> master
             my_num = my_cursor.fetchone()[0]
 
             if form.cash.data > 0:
@@ -237,14 +208,8 @@ def withdrawal_page():
             if Total_Cash >= form.cash.data:
                 if form.cash.data > 0:
                     cursor = mydb.cursor()
-<<<<<<< HEAD
                     cursor.execute("insert into transaction(Transaction, Transferred, Cash, mobile)"
                                 " values('Withdrawal', '-', -{}, '{}')".format(form.cash.data, my_num))
-=======
-                    cursor.execute(
-                        "insert into transactions(Transaction, Transferred, Cash, mobile) values('Withdrawal', '-', -{}, '{}')".format(
-                            form.cash.data, my_num))
->>>>>>> master
                     mydb.commit()
 
                     flash("Your cash is Withdrawal successfully.", category="success")
