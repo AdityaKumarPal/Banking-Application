@@ -11,3 +11,4 @@ class User:
 def load_user(user_id):
     return User.cursor(user_id)
 
+
