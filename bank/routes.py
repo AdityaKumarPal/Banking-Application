@@ -3,7 +3,7 @@ from flask import render_template, redirect, url_for, flash, session
 from bank.forms import RegisterForm, LoginForm, DepositForm, WithdrawalForm, TransferForm, ChangePasswordForm
 import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="Aditya@997", database="abi_project")
+mydb = mysql.connector.connect(host="localhost", user="root", passwd="your_mysql_password", database="database_name")
 
 
 @app.route("/")
