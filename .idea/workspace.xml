@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f05836fb-ea41-4dee-b92f-19d72195d76f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bank/static/widget.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/account_profile/deposit.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/loggedin/deposit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/account_profile/mini_statement.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/loggedin/mini_statement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/account_profile/transfer.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/loggedin/transfer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/account_profile/withdrawal.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/loggedin/withdrawal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/includes/item_modals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/loggedin/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/bank/templates/register.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I37eNk5S5TEMIHsXWPXg4tUlv4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/My Data/Python/Python Projects/Good Projects/ABI-(Bank)/Web_Development&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Data\Python\Python Projects\Good Projects\ABI-(Bank)\Web_Development\bank\templates\account_profile" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f05836fb-ea41-4dee-b92f-19d72195d76f" name="Changes" comment="" />
+      <created>1669398508341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669398508341</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

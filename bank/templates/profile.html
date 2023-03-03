@@ -50,12 +50,12 @@
    {% if messages %}
    {% for category, message in messages %}
 
-   <div class="alert alert-{{ category }}">
-
-      {{ message }}
-      
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">CloseX</span> 
-   </div>
+            <div class="alert alert-{{ category }}">
+                <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                {{ message }}
+            </div>
 
    {% endfor %}
    {% endif %}

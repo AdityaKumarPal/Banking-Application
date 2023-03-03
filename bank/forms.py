@@ -38,3 +38,9 @@ class TransferForm(FlaskForm):
     recipient = StringField(label="Recipients Mobile : ", validators=[InputRequired()])
     cash = IntegerField(label="Amount : ", validators=[InputRequired()])
     submit = SubmitField(label="Transfer")
+
+class ChangePasswordForm(FlaskForm):
+    oldPassword = PasswordField(label="Old Password : ", validators=[InputRequired()])
+    newPassword = PasswordField(label="New Password : ", validators=[InputRequired()])
+    reEnterPassword = PasswordField(label="Re-Enter New Password : ", validators=[InputRequired()])
+    submit = SubmitField(label="Change Password")
