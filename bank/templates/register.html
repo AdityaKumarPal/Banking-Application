@@ -1,56 +1,55 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Register Page
+Login Page
 {% endblock %}
 
 {% block content %}
-<body class="text-center">
-    <div class="container">
-        <form method="POST" class="form-register" style="color:white" action="">
-            {{ form.hidden_tag() }}
-            <img src="{{ url_for('static', filename='large_logo.png') }}">
-            <h1 class="h3 mb-3 font-weight-normal">
-                Please Create Your Account.
-            </h1>
-            <br>
-            {{ form.name.label() }}
-            {{ form.name(class='form-control', placeholder='Name') }}
 
-            {{ form.gender.label() }}
-            {{ form.gender(class='form-control') }}
+<div class="container">
 
-            {{ form.dob.label() }}
-            {{ form.dob(type="date", class='form-control') }}
+    <img src="{{ url_for('static', filename='large_logo.png') }}">
 
-            {{ form.email_address.label() }}
-            {{ form.email_address(class='form-control', placeholder='Email Address') }}
+    <h1>
+        Create an Account
+    </h1>
 
-            {{ form.mobile.label() }}
-            {{ form.mobile(class='form-control', placeholder='Mobile Number') }}
+    <form class="container form" method="POST">
 
-            {{ form.password1.label() }}
-            {{ form.password1(class='form-control', placeholder='Password') }}
+        {{ form.hidden_tag() }}
 
-            {{ form.password2.label() }}
-            {{ form.password2(class='form-control', placeholder='Confirm Password') }}
+        {{ form.name.label() }}
+        {{ form.name(class='input', placeholder='Name') }}
 
-            <br>
+        {{ form.gender.label() }}
+        {{ form.gender(class='input') }}
 
-            {{ form.submit(class='btn btn-lg btn-block btn-primary') }}
-            <br>
+        {{ form.dob.label() }}
+        {{ form.dob(type="date", class='input') }}
 
-            <div class="checkbox mb-3">
-                <h6>Already have an account? </h6>
-                <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
-            </div>
+        {{ form.email_address.label() }}
+        {{ form.email_address(class='input', placeholder='Email Address') }}
 
-        </form>
+        {{ form.mobile.label() }}
+        {{ form.mobile(class='input', placeholder='Mobile Number') }}
+
+        {{ form.password1.label() }}
+        {{ form.password1(class='input', placeholder='Password') }}
+
+        {{ form.password2.label() }}
+        {{ form.password2(class='input', placeholder='Confirm Password') }}
+
+        <br>
+
+        {{ form.submit(class='blueButton') }}
+
+    </form>
+
+    <div>
+        <h5>Already have an account? </h5>
+        <a class="primary-btn btn" href=" {{ url_for('login_page') }} ">Login</a>
     </div>
-</body>
-{% endblock %}
 
-<!--import os-->
-<!--os.urandom(12).hex()-->
-<!--0a2d48a71c19be41bdc3447c-->
-<!--This key must be used in __init__.py for our registration form to be visible-->
+</div>
+
+{% endblock %}

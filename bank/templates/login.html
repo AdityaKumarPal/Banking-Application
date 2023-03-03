@@ -1,41 +1,40 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Login Page
+Login Page
 {% endblock %}
 
 {% block content %}
-<body class="text-center">
-    <div class="container">
-        <form class="form-signin" method="POST" style="color:white">
-            {{ form.hidden_tag() }}
-            <img src="{{ url_for('static', filename='large_logo.png') }}">
-<!--            <img class="mb-4" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt="">-->
-            <h1 class="h3 mb-3 font-weight-normal">
-                Please Login
-            </h1>
 
-            <br>
-            {{ form.mobile.label() }}
-            {{ form.mobile(class="form-control", placeholder="Mobile Number") }}
+<div class="container">
 
-            {{ form.password.label() }}
-            {{ form.password(class="form-control", placeholder="Password") }}
-            <br>
+    <img src="{{ url_for('static', filename='large_logo.png') }}">
 
-            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
-            <br>
+    <h1>
+        Please Login
+    </h1>
 
-            <div class="checkbox mb-3">
-                <h6>Don't Have an account? </h6>
-                <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a>
-            </div>
+    <form class="container form" method="POST">
 
-        </form>
+        {{ form.hidden_tag() }}
+
+        {{ form.mobile.label() }}
+        {{ form.mobile(class="input", placeholder="Mobile Number") }}
+
+        {{ form.password.label() }}
+        {{ form.password(class="input", placeholder="Password") }}
+        <br>
+
+        {{ form.submit(class="blueButton") }}
+        <br>
+
+    </form>
+
+    <div>
+        <h5>Don't have an account? </h5>
+        <a class="primary-btn btn" href=" {{ url_for('register_page') }} ">Register</a>
     </div>
-<script>
-    console.log('script tag testing');
-</script>
-</body>
-{% endblock %}
 
+</div>
+
+{% endblock %}
